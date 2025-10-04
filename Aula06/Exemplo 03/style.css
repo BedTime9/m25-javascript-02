@@ -128,3 +128,67 @@ h3 + p {
     color: pink;
 }
 
+/* Menu na página 2 (exemplo03) */
+
+
+.menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.submenu li {
+    display: block;
+    width: 150px;
+}
+
+.submenu:hover .submenu {
+    display: block;
+
+}
+
+.menu li a:hover {
+    background-color: #333;
+}
+
+p[data-detalhe] {
+    text-decoration: underline;
+}
+
+p[data-dealhe="linha3"] {
+    background-color: aqua;
+}
+
+div {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: red;
+    animation: aaa 3s linear ease-in;
+}
+
+@keyframes aaa {
+    to {transform: translateY(300px);}
+}
