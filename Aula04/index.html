@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de clinica - Login </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="quadro-login">
+        <img src="media/img-login.png" alt="imagem-login">
+        <h2 id="title-login" onmouseenter="hover()" onmouseleave="out()"> Olá, bem vindo! </h2>
+
+        <!-- Conjunto para formatação do input email. -->
+        <div class="form-input">
+            <label for="email"> Informe seu email </label>
+            <input type="text" name="email" id="email" placeholder="email@exemplo.com.br">
+        </div>
+
+        <!-- Conjunto para formatação do input senha. -->
+        <div class="form-input">
+            <label for="senha"> Informe sua senha </label>
+            <input type="text" name="senha" id="senha" placeholder="ex: 123456">
+        </div>
+
+        <!-- Conjunto para formatação do Esqueceu a senha. -->
+         <div id="manter-logado">
+            <label for="manter-logado"> Manter-se logado </label>
+            <input type="checkbox" name="manter-logado">     
+         </div>
+         <div id="esquecer-senha">
+            <a href="#"> Esqueceu a senha? </a>
+         </div>
+        <!-- Conjunto para formatação do Login-button. -->
+         <div class="login-btn">
+            <button id="login-btn"> Login </button>
+         </div>
+
+         
+
+    </div>
+
+    <script>
+        const title = document.getElementById("title-login")
+        function hover() {
+            title.innerHTML = "Insira seus dados."
+        }
+
+        function out() {
+            title.innerHTML = "Olá, bem vindo!"
+        }
+    </script>
+</body>
+</html>
