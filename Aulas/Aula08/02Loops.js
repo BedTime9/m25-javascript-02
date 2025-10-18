@@ -18,7 +18,15 @@ for (i = 0; i < 11; i++) {
 
 // Uso de laço "while"
 
-j = 0;
-while (j < 10) {
-    console.log(`Valor atual de i: [${j}]`)
+let j = 0;
+while (j <= 10) {
+    console.log(`O valor de j está em: [${j}].`)
+    j++
 }
+
+// Utilizando "do... while"
+
+do {
+    console.log(`Valor final de j = ` + i++)
+} while(j < 10);
+console.log("Fim do laço do...while.")
