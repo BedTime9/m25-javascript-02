@@ -6,6 +6,6 @@
 
 // Uso de laço "for"
 
-while (1 == 1) {
-    console.log(1)
+for (i = 0; i < 1500000; i++) {
+    console.log(`[${i}] instância.`)
 }
