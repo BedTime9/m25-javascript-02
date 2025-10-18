@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #2f2f2f;
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: #4f4f4f;
+            border: 2px solid #00ffff7e;
+            color: #ffffff;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            border: 2px solid #00ffff;
+            background-color: #00ffff7e;
+        }
+
+  
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div id="form">
+            <form action="#">
+                <label for="nome">Digite seu nome: </label>
+                <input type="text" name="nome" id="nome">
+                <br> <br>
+                <label for="idade">Digite sua idade: </label>
+                <input type="number" name="idade" id="idade">
+                <br> <br>
+                <button type="button" 
+                onclick="
+                let nome = 'Filipe';
+                let idade = 16;
+                alert('Dados enviados.')
+                console.log(`Nome: ${nome}`);
+                console.log(`Idade: ${idade}`)
+                "> Enviar </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
