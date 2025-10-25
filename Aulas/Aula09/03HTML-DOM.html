@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            height: 100vh;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2f2f22;
+            color: #ffffff;
+
+            padding: 2em;
+        }
+
+        #principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            height: 100%;
+        }
+
+        fieldset {
+            padding: 20px;
+            width: 100%;
+        }
+
+        fieldset:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            padding: 5em;
+        }
+
+        #lista {
+            display: flex;
+            gap: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1> Manipulando HTML com JS </h1>
+    </header>
+
+    <section id="principal">
+        <fieldset>
+            <legend> Itens da lista de compras. </legend>
+            <label for="texto">Item: </label>
+            <input type="text" id="texto">
+            <button id="add"> Adicionar </button>
+            <button id="rem"> Remover </button>
+        </fieldset>
+        <fieldset>
+            <legend> Items da lista </legend>
+            <ul id="lista"></ul>
+        </fieldset>
+    </section>
+
+    <script src="03DOM.js"></script>
+</body>
+</html>
