@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de uso de JS com formulário</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            height: 90vh;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2f2f22;
+            color: #ffffff;
+
+            padding: 2em;
+        }
+
+        #sectionform {
+            height: 100%;
+        }
+
+        fieldset {
+            padding: 5em;
+        }
+
+        div {
+            padding: 5em;
+        }
+
+        div input {
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1> Uso de JS com formulário</h1>
+    </header>
+
+    <section id="sectionform">
+        <form action="#" method="get" id="form">
+            <fieldset>
+                <label for="nome"> Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome: ">
+            </fieldset>
+            <fieldset>
+                <label for="telefone"> Telefone: </label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone: ">
+            </fieldset>
+            <div>
+                <input type="submit" value="Enviar" id="enviar">
+                &nbsp;
+                <input type="reset" value="Limpar" id="enviar">
+            </div>
+        </form>
+    </section>
+
+    <script src="04Formulario.js"></script>
+</body>
+</html>
