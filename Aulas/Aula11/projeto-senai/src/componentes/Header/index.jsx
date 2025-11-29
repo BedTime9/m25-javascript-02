@@ -1,16 +1,19 @@
-import MenuHamburger from './assets/menu.svg';
-import LogoSenai from './assets/logo-senai.png';
-import Login from './assets/login.svg';
-import Search from './assets/search.svg';
-import './style.css';
 
-export default function Header() {
+import LogoSenai from './assets/logo-senai.png';
+import './styles.css';
+
+export default function Header({ onToggleMenu }) {
     return(
         <div className='cabecalho'>
-            <img src={MenuHamburger} alt="Imagem do menu" />
-            <img src={LogoSenai} alt="Logo do Senai" />
-            <img src={Login} alt="Imagem do login" />
-            <img src={Search} alt="Imagem de pesquisa" />
+            <div className='pnl-esquerda'>
+                <span className='icon-hamburger' onClick={onToggleMenu}></span>
+                <img src={LogoSenai} alt="Logo do Senai" />
+            </div>
+            
+            <div className="pnl-direita">
+                <span className='icon-login'></span>
+                <span className='icon-search'></span>
+            </div>
         </div>
     );
 }
